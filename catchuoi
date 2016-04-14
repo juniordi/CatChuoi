@@ -1,0 +1,16 @@
+Function catchuoi(str, sttkytubatdaucat, catdenkhigapkytunao)
+    timthay = False
+    For i = sttkytubatdaucat To Len(str)
+        ch = Mid(str, i, 1)
+        If ch = catdenkhigapkytunao Then
+            timthay = True
+            Exit For
+        End If
+    Next
+    If timthay Then
+        catchuoi = Mid(str, sttkytubatdaucat + 1, i - sttkytubatdaucat)
+    Else
+        catchuoi = CVErr(xlErrNA) //return N/A
+    End If
+    
+End Function
