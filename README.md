@@ -1,0 +1,2 @@
+# CatChuoi
+Hàm cắt chuỗi
