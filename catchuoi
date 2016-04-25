@@ -7,8 +7,11 @@ Function catchuoi(str, sttkytubatdaucat, catdenkhigapkytunao)
             Exit For
         End If
     Next
+    If catdenkhigapkytunao = "" Then
+        timthay = True 'cut to the end of str
+    End If
     If timthay Then
-        catchuoi = Mid(str, sttkytubatdaucat + 1, i - sttkytubatdaucat)
+        catchuoi = Mid(str, sttkytubatdaucat, i - sttkytubatdaucat)
     Else
         catchuoi = CVErr(xlErrNA) //return N/A
     End If
